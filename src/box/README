@@ -1,0 +1,24 @@
+```js
+const box = Box({
+  container: '',
+  template: `
+    <div data-box="container">
+      <div data-box="header"></div>
+      <div data-box="body">
+        <a data-box="button">按钮</a>
+      </div>
+    </div>
+  `,
+  position: [0, 0],
+  style: {
+    width: '',
+    
+  }
+})
+box.set('template', '').set('style', '').set('position', [])
+box.find('body')
+box.open()
+box.close()
+box.destroy()
+box.restore()
+```

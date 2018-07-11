@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body style="height: 2000px">
+    <div class="top">
+        <span>父级</span>
+        <div class="lv1">
+            <div class="lv2">子级1</div>
+            <div class="lv2">子级2</div>
+            <div class="lv2 once">事件只会执行一次</div>
+            <div class="lv2">
+                <a href="" p>点击不跳转</a>
+                <a href="">点击跳转</a>
+            </div>
+            <div class="lv2">
+                <span class="lv3">禁止了冒泡</span>
+            </div>
+        </div>
+    </div>
+    <button id="destroy">销毁scroll.frame事件</button>
+    <button id="trigger">触发click.auto事件</button>
+    <script type="text/javascript" src="dlls/es6.dll.js"></script>
+</body>
+</html>
