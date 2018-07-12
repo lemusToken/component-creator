@@ -65,17 +65,10 @@ class Store {
         (v, name) => {
           //  getter对应的业务名，getter返回的值
           fn(getters[i], v)
-          // app.setData({
-          //   [getters[i]]: typeof v === 'undefined' ? '' : v
-          // })
         },
         watchFlag
       )
       fn(getters[i], Ob.data[this.getStoredObKey(i)])
-      // const val = typeof Ob.data[this.getStoredObKey(i)] === 'undefined' ? app.data[getters[i]] : Ob.data[this.getStoredObKey(i)]
-      // app.setData({
-      //   [getters[i]]: typeof val === 'undefined' ? '' : val
-      // })
     }
   }
 
