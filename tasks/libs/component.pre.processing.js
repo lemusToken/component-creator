@@ -22,7 +22,7 @@ module.exports = (name, config, op = {}) => {
   //  导出输出到全局变量
   if (op.exportVar) {
     config.module.rules.push({
-      test: require.resolve(`../src/${name}/index.js`),
+      test: require.resolve(`../../src/${name}/index.js`),
       loader: 'expose-loader?EFX'
     })
   }
